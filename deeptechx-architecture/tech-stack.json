@@ -1,0 +1,338 @@
+{
+  "project": {
+    "name": "DeepTechX Launchpad - Supreme Architecture",
+    "version": "1.0.0",
+    "description": "Living Digital Entity - 24/7 Consultancy Platform for Space & Deep Tech Ventures",
+    "repository": "https://github.com/deeptechx/launchpad-supreme"
+  },
+  "frontend": {
+    "framework": {
+      "name": "Next.js",
+      "version": "15.x",
+      "features": ["App Router", "React Server Components", "Edge Runtime"]
+    },
+    "language": {
+      "name": "TypeScript",
+      "version": "5.x",
+      "strict": true
+    },
+    "styling": {
+      "framework": {
+        "name": "Tailwind CSS",
+        "version": "4.x"
+      },
+      "components": {
+        "name": "shadcn/ui",
+        "version": "latest"
+      },
+      "themes": ["light", "dark", "space"]
+    },
+    "3d": {
+      "core": {
+        "name": "React Three Fiber",
+        "version": "9.x"
+      },
+      "utilities": {
+        "name": "@react-three/drei",
+        "version": "latest"
+      },
+      "xr": {
+        "name": "@react-three/xr",
+        "version": "latest"
+      },
+      "postprocessing": {
+        "name": "@react-three/postprocessing",
+        "version": "latest"
+      },
+      "compression": {
+        "draco": true,
+        "ktx2": true
+      }
+    },
+    "animation": {
+      "ui": {
+        "name": "Framer Motion",
+        "version": "11.x"
+      },
+      "scroll": {
+        "name": "GSAP",
+        "version": "3.x",
+        "plugins": ["ScrollTrigger"]
+      },
+      "3d_physics": {
+        "name": "@react-spring/three",
+        "version": "latest"
+      }
+    },
+    "state": {
+      "global": {
+        "name": "Zustand",
+        "version": "4.x"
+      },
+      "server": {
+        "name": "TanStack Query",
+        "version": "5.x"
+      },
+      "atomic": {
+        "name": "Jotai",
+        "version": "latest"
+      }
+    }
+  },
+  "ai_ml": {
+    "orchestration": {
+      "name": "Vercel AI SDK",
+      "version": "3.x",
+      "features": ["Streaming", "Multi-model", "Tool Calling"]
+    },
+    "vector_database": {
+      "name": "Pinecone",
+      "alternative": "Weaviate",
+      "index_name": "deeptechx-curriculum"
+    },
+    "embeddings": {
+      "provider": "OpenAI",
+      "model": "text-embedding-3-large",
+      "dimensions": 3072
+    },
+    "llm": {
+      "primary": {
+        "provider": "OpenAI",
+        "model": "gpt-4o"
+      },
+      "secondary": {
+        "provider": "Anthropic",
+        "model": "claude-3-5-sonnet"
+      }
+    },
+    "rag": {
+      "chunking": ["semantic", "recursive"],
+      "reranking": {
+        "provider": "Cohere",
+        "model": "rerank-v3"
+      }
+    },
+    "agent_framework": {
+      "name": "LangChain",
+      "status": "future",
+      "features": ["Multi-step reasoning", "Tool use", "Memory"]
+    }
+  },
+  "backend": {
+    "deployment": {
+      "platform": "Vercel",
+      "features": ["Edge Network", "Edge Functions", "Image Optimization"],
+      "locations": 100
+    },
+    "database": {
+      "primary": {
+        "name": "Supabase",
+        "type": "PostgreSQL",
+        "version": "2.x"
+      },
+      "cache": {
+        "name": "Upstash Redis"
+      },
+      "vector": {
+        "name": "Pinecone"
+      }
+    },
+    "authentication": {
+      "framework": {
+        "name": "Auth.js",
+        "version": "5.x"
+      },
+      "providers": ["Google", "GitHub", "LinkedIn"],
+      "tokens": "JWT with refresh"
+    },
+    "payments": {
+      "provider": "Stripe",
+      "version": "14.x",
+      "features": ["Checkout sessions", "Subscriptions", "Webhooks"]
+    },
+    "cms": {
+      "name": "Sanity",
+      "version": "3.x",
+      "content_types": ["Curriculum", "Blog", "Media"]
+    }
+  },
+  "monitoring": {
+    "analytics": {
+      "name": "Vercel Analytics"
+    },
+    "error_tracking": {
+      "name": "Sentry",
+      "version": "7.x"
+    },
+    "performance": {
+      "targets": {
+        "fcp": "< 1.2s",
+        "tti": "< 2.5s",
+        "3d_load": "< 3s",
+        "mobile_fps": "60fps"
+      }
+    }
+  },
+  "modules": {
+    "total": 14,
+    "list": [
+      {
+        "id": "M01",
+        "title": "System-Thinking Vetting & De-Hype",
+        "level": "All",
+        "interactive": true,
+        "3d_type": "Holographic Dashboard"
+      },
+      {
+        "id": "M02",
+        "title": "Fast-Track Development Framework",
+        "level": "Technical",
+        "interactive": true,
+        "3d_type": "3D Timeline"
+      },
+      {
+        "id": "M03",
+        "title": "Regulatory-First Design",
+        "level": "Specialist",
+        "interactive": false,
+        "3d_type": "Compliance Shield"
+      },
+      {
+        "id": "M04",
+        "title": "Go-To-Market & Tokenomics",
+        "level": "Business",
+        "interactive": true,
+        "3d_type": "Spinning Token"
+      },
+      {
+        "id": "M05",
+        "title": "Building AI Agents for Deep Tech",
+        "level": "Advanced",
+        "expanded": true,
+        "webgl": true,
+        "3d_type": "Neural Network"
+      },
+      {
+        "id": "M06",
+        "title": "PQC & Quantum-Safe Systems",
+        "level": "Specialist",
+        "webgl": true,
+        "interactive": true,
+        "3d_type": "Quantum Lock"
+      },
+      {
+        "id": "M07",
+        "title": "Nuclear + Fusion Energy",
+        "level": "Specialist",
+        "interactive": false,
+        "3d_type": "Reactor Core"
+      },
+      {
+        "id": "M08",
+        "title": "Space Tech: From Project to Hero",
+        "level": "Intrapreneur",
+        "webgl": true,
+        "interactive": true,
+        "3d_type": "Satellite Constellation"
+      },
+      {
+        "id": "M09",
+        "title": "AI Ethics & Governance",
+        "level": "All",
+        "interactive": false,
+        "3d_type": "Ethical Compass"
+      },
+      {
+        "id": "M10",
+        "title": "Frugal Innovation",
+        "level": "Entrepreneur",
+        "interactive": false,
+        "3d_type": "Resource Pyramid"
+      },
+      {
+        "id": "M11",
+        "title": "AI Agents in Space Tech",
+        "level": "Advanced",
+        "webgl": true,
+        "3d_type": "Orbital AI Swarm"
+      },
+      {
+        "id": "M12",
+        "title": "Unit Economics & Sovereign Scaling",
+        "level": "Business",
+        "interactive": true,
+        "3d_type": "Global HQ Selector"
+      },
+      {
+        "id": "M13",
+        "title": "First-Principles + Systems Thinking",
+        "level": "All",
+        "interactive": false,
+        "3d_type": "Foundation Blocks"
+      },
+      {
+        "id": "M14",
+        "title": "Agentic Monetization & Unicorn Playbook",
+        "level": "Founder",
+        "interactive": false,
+        "3d_type": "Growth Trajectory Arc"
+      }
+    ]
+  },
+  "pricing": {
+    "lifetime": {
+      "price": 597,
+      "currency": "USD",
+      "description": "Full curriculum access"
+    },
+    "nft": {
+      "price": 1197,
+      "currency": "USD",
+      "description": "NFT Edition with exclusive content"
+    },
+    "digest": {
+      "price": 67,
+      "currency": "USD",
+      "period": "monthly",
+      "description": "Monthly insights digest"
+    }
+  },
+  "success_metrics": {
+    "time_on_site": {
+      "target": "8+ minutes",
+      "measurement": "Analytics"
+    },
+    "pages_per_session": {
+      "target": "4+",
+      "measurement": "Analytics"
+    },
+    "calculator_completion": {
+      "target": "30%",
+      "measurement": "Event tracking"
+    },
+    "email_capture_rate": {
+      "target": "15%",
+      "measurement": "Conversion tracking"
+    },
+    "purchase_conversion": {
+      "target": "5%",
+      "measurement": "Stripe data"
+    },
+    "ai_concierge_usage": {
+      "target": "40% of visitors",
+      "measurement": "Chat events"
+    },
+    "module_completion_rate": {
+      "target": "60%",
+      "measurement": "Progress tracking"
+    },
+    "nft_upgrade_rate": {
+      "target": "20%",
+      "measurement": "Stripe data"
+    },
+    "nps_score": {
+      "target": "50+",
+      "measurement": "Survey"
+    }
+  }
+}
